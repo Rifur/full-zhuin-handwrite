@@ -2,7 +2,7 @@
 /* note: doesn't ignore any illegal words */
 
 // Bopomofo with initial, middle and final consonants.
-var bpmf = require('./zhuyin-single.json');
+var bpmf = require('./single-data/zhuyin-single.json');
 
 var iniCon = bpmf['initial'];
 var midCon = bpmf['middle'];

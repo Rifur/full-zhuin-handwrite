@@ -1,8 +1,6 @@
 #!/bin/sh
 
-zinnia_learn zhuyin-for-zinnia.s zhuyin-zh_TW.model
-zinnia -m zhuyin-zh_TW.model < zhuyin-for-zinnia.s
-zinnia_convert zhuyin-zh_TW.model.txt zhuyin-zh_TW.model
+zinnia_learn single-data/zhuyin-for-zinnia.s single-data/zhuyin-zh_TW.model
 
-node full-zhuyin-gen.js > full-two-zhuyin.s
-zinnia_learn full-two-zhuyin.s full.model
+node full-zhuyin-gen.js > full-data/full-zhuyin.s
+zinnia_learn full-data/full-zhuyin.s full-zhuyin.model
